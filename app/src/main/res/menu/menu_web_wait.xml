@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bowool.xuanxue.WebWait">
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="刷新"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_begin"
+        android:orderInCategory="100"
+        android:title="开始抢玄学"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="退出抢玄学"
+        app:showAsAction="never" />
+
+</menu>

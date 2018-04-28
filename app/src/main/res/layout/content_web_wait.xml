@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/web_container"
+    tools:context=".WebWait"
+    tools:showIn="@layout/activity_web_wait">
+
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+    <com.bowool.xuanxue.DraggingPoint
+        android:id="@+id/dragging_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="105dp"
+        tools:ignore="MissingConstraints"></com.bowool.xuanxue.DraggingPoint>
+
+    <TextView
+        android:id="@+id/date_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="123asd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/date_to_xuanxue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="wqeqwewqe"
+        app:layout_constraintEnd_toEndOf="@+id/dragging_point"
+        app:layout_constraintTop_toTopOf="@+id/dragging_point" />
+
+</android.support.constraint.ConstraintLayout>

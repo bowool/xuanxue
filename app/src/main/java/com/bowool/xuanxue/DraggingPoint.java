@@ -14,8 +14,8 @@ import android.widget.Toast;
 public class DraggingPoint extends View {
 
     private Paint paint;
-    private float X = 100;
-    private float Y = 100;
+    private float X = 200;
+    private float Y = 150;
     Rect rect = new Rect();
     private boolean M=false;
 
@@ -42,8 +42,8 @@ public class DraggingPoint extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawCircle(X, Y, 25, paint);
-        rect.set((int) (X - 25), (int) (Y - 25), (int) (X + 25), (int) (Y + 25));
+        canvas.drawCircle(X, Y, 50, paint);
+        rect.set((int) (X - 50), (int) (Y - 50), (int) (X + 50), (int) (Y + 50));
     }
 
     @Override

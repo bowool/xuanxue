@@ -7,7 +7,10 @@
     android:id="@+id/web_container"
     tools:context=".WebWait"
     tools:showIn="@layout/activity_web_wait">
-
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
 
     <com.bowool.xuanxue.DraggingPoint
         android:id="@+id/dragging_point"
@@ -32,12 +35,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="wqeqwewqe"
-        app:layout_constraintEnd_toEndOf="@+id/dragging_point"
-        app:layout_constraintTop_toTopOf="@+id/dragging_point" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <WebView
-        android:id="@+id/web_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
 
 </android.support.constraint.ConstraintLayout>
